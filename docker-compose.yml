@@ -3,7 +3,7 @@ version: '2'
 services:
     kafka-cluster:
       image: landoop/fast-data-dev:latest
-      environment: 
+      environment:
         ADV_HOST: 127.0.0.1
         RUNTESTS: 0
       ports:
@@ -19,7 +19,7 @@ services:
         - 5600:5600
     postgres:
       image: postgres:9.5-alpine
-      environment: 
+      environment:
         POSTGRES_USER: postgres
         POSTGRES_PASSWORD: postgres
         POSTGRES_DB: postgres
